@@ -6,6 +6,17 @@ import illustrationone from '../images/illustration-1.svg'
 import illustrationtwo from '../images/illustration-2.svg'
 import illustrationthree from '../images/illustration-3.svg'
 import logowhite from '../images/logo-white.svg'
+import messages from '../images/messages.svg'
+import badge from './images/badge.svg'
+import verticalline from '../images/vertical-line.svg'
+import plantpot from '../images/plantpot.svg'
+import compass from '../images/compass.svg'
+import profile from '../images/profile.svg'
+import search from '../images/magnifying.svg'
+import map from '../images/map.svg'
+import gram from '../images/leaves.svg'
+import board from '../images/pinboard.svg'
+import edit from '../images/edit.svg'
 
 
 // ! This is the landing page
@@ -14,8 +25,6 @@ import logowhite from '../images/logo-white.svg'
 // * About Us
 
 // ? Limited functionality if you're not logged in
-
-
 
 const Home = () => {
 
@@ -113,33 +122,33 @@ const Home = () => {
           {/* Making left section and right edit icon align center */}
           <div className="header-icon">
             {/* Making 'Messages' and the icon align center */}
-            <img src="./images/messages.svg" alt="message-icon" />
+            <img src={messages} alt="message-icon" />
             <h6>Messages</h6>
           </div>
           <div><Link to={{ pathname: `/user-page/${user._id}/settings`, state: { user } }}>
-            <img src="./images/edit.svg" alt="edit-icon" />
+            <img src={edit} alt="edit-icon" />
           </Link>
           </div>
         </div>
 
         <section className="status">
           <div>
-            <img src="./images/badge.svg" alt="badge-icon" />
+            <img src={badge} alt="badge-icon" />
             <h5>Support<br />Badge</h5>
           </div>
-          <img src="./images/vertical-line.svg" alt="vertical-line" />
+          <img src={verticalline} alt="vertical-line" />
           {user.sitter ?
             <div>
-              <img src="../images/plantpot.svg" alt="flower-in-pot" />
+              <img src={plantpot} alt="flower-in-pot" />
               <h5>PLANT<br />SITTER</h5>
             </div>
             :
             <div>
-              <img src="../images/compass.svg" alt="compass" />
+              <img src={compass} alt="compass" />
               <h5>PLANT<br />OWNER</h5>
             </div>
           }
-          <img src="./images/vertical-line.svg" alt="vertical-line" />
+          <img src={verticalline} alt="vertical-line" />
           <div>
             <h1>{userPlants.length}</h1>
             <h5>Plant<br />Count</h5>
@@ -150,31 +159,31 @@ const Home = () => {
         <section className="list">
           <Link to={`/user-page/${user._id}`}>
             <div className="list-item" id="home-profile">
-              <img src="./images/profile.svg" alt="profile" />
+              <img src={profile} alt="profile" />
               <h3>Profile</h3>
             </div>
           </Link>
           <Link to={'/plant-search'}>
             <div className="list-item" id="home-search">
-              <img src="./images/magnifying.svg" alt="magnifying" />
+              <img src={search} alt="magnifying" />
               <h3>Plant Search</h3>
             </div>
           </Link>
           <Link to={'/user-map'}>
             <div className="list-item" id="home-map">
-              <img src="./images/map.svg" alt="map" />
+              <img src={map} alt="map" />
               <h3>User Map</h3>
             </div>
           </Link>
           <Link to={'/fernstagram'}>
             <div className="list-item" id="home-ferngram">
-              <img src="./images/leaves.svg" alt="leaves" />
+              <img src={gram} alt="leaves" />
               <h3>FernGram</h3>
             </div>
           </Link>
           <Link to={'/plant-sitters'}>
             <div className="list-item" id="home-pinboard">
-              <img src="./images/pinboard.svg" alt="pinboard" />
+              <img src={board} alt="pinboard" />
               <h3>Pin Board</h3>
             </div>
           </Link>

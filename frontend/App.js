@@ -2,11 +2,9 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './styles/style.scss'
 
-import PlantHelp from './components/PlantHelp'
 import PlantProfile from './components/PlantProfile'
 import EditPlant from './components/EditPlant'
 import AddPlant from './components/AddPlant'
-import Wishlist from './components/Wishlist'
 import UserPage from './components/UserPage'
 import Fernstagram from './components/Fernstagram'
 import PlantSitters from './components/PlantSitters'
@@ -23,13 +21,10 @@ const App = () => {
   return <BrowserRouter>
     <Header />
     <Switch>
-      {/* Additional Pages / Quality Of Life ETC */}
-      <Route exact path="/plant-help/" component={PlantHelp} />
       {/* User Interface */}
       <Route exact path="/profile-plant/:plantId/" component={PlantProfile} />
       <Route exact path="/edit-plant/:plantId/" component={EditPlant} />
       <Route exact path="/add-plant/:plantId/" component={AddPlant} />
-      <Route exact path="/user-page/:userid/wishlist/" component={Wishlist} />
       <Route exact path="/user-page/:userId/" component={UserPage} />
       {/* Message Boards */}
       <Route exact path="/fernstagram/" component={Fernstagram} />

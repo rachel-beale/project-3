@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
+import chairWhite from '../images/book.svg'
+import potGreen from '../images/flowerpot-green.svg'
+import chairGreen from '../images/chair-green.svg'
+import potWhite from '../images/flowerpot-white.svg'
 
 
 const Register = (props) => {
@@ -184,13 +188,13 @@ const Register = (props) => {
                   onClick={sameButton}
                   value={true}
                   name="sitter">
-                  <img src="../images/chair-white.svg" alt="chair" />Sitter</button>
+                  <img src={chairWhite} alt="chair" />Sitter</button>
                 <button
                   className="button-radio "
                   onClick={handleRadioButton}
                   value={false}
                   name="sitter">
-                  <img src="../images/flowerpot-green.svg" alt="flowerpot" />
+                  <img src={potGreen} alt="flowerpot" />
               Owner</button>
               </div>
               :
@@ -200,13 +204,13 @@ const Register = (props) => {
                   onClick={handleRadioButton}
                   value={true}
                   name="sitter">
-                  <img src="../images/chair-green.svg" alt="chair" />Sitter</button>
+                  <img src={chairGreen} alt="chair" />Sitter</button>
                 <button
                   className="button-radio active"
                   onClick={sameButton}
                   value={false}
                   name="sitter">
-                  <img src="../images/flowerpot-white.svg" alt="flowerpot" />
+                  <img src={potWhite} alt="flowerpot" />
               Owner</button>
               </div>
             }

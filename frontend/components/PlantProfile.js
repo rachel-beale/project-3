@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom'
 import { isCreator } from '../lib/auth'
 import axios from 'axios'
 import moment from 'moment'
+ 
+import message from '../images/book.svg'
+import edit from '../images/share.svg'
+import deerGreen from '../images/deer-green.svg'
+import fireplaceGreen from '../images/fireplace-green.svg'
+import pineTree from '../images/pine-tree.svg'
 
 const PlantProfile = (props) => {
   // Carrying formData over from addPlant
@@ -42,14 +48,14 @@ const PlantProfile = (props) => {
           {/* Making left section and right edit icon align center */}
           <div className="header-icon">
             {/* Making 'Messages' and the icon align center */}
-            <img src="../images/book.svg" alt="message-icon" />
+            <img src={message} alt="message-icon" />
             <h6>{plantData.library ?
               plantData.library
               :
               'No known bibliography documented'}</h6>
           </div>
           <div>
-            <img src="../images/share.svg" alt="edit-icon" />
+            <img src={edit} alt="edit-icon" />
           </div>
         </div>
 
@@ -71,18 +77,18 @@ const PlantProfile = (props) => {
 
         {plantData.outdoor === true ?
           <div className="profile-info">
-            <img src="../images/deer-green.svg" alt="deer" />
+            <img src={deerGreen} alt="deer" />
             <h4>Outdoor</h4>
           </div>
           :
           <div className="profile-info">
-            <img src="../images/fireplace-green.svg" alt="fireplace" />
+            <img src={fireplaceGreen} alt="fireplace" />
             <h4>Indoor</h4>
           </div>
         }
 
         <div className="profile-info add-space">
-          <img src="../images/pine-tree.svg" alt="pine-tree" />
+          <img src={pineTree} alt="pine-tree" />
           <h4>{plantData.plantType}</h4>
         </div>
 

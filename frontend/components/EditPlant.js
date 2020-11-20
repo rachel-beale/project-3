@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
+import message from '../images/book.svg'
+import share from '../images/share.svg'
+import deerGreen from '../images/deer-green.svg'
+import deerWhite from '../images/deer-white.svg'
+import fireplaceWhite from '../images/fireplace-white.svg'
+import fireplaceGreen from '../images/fireplace-green.svg'
+
 // * Image 
 // * Outdoor plant 
 // * Plant type
@@ -75,11 +82,11 @@ const EditPlant = (props) => {
           {/* Making left section and right edit icon align center */}
           <div className="header-icon">
             {/* Making 'Messages' and the icon align center */}
-            <img src="../images/book.svg" alt="message-icon" />
+            <img src={message} alt="message-icon" />
             <h6>{plantData.library}</h6>
           </div>
           <div>
-            <img src="../images/share.svg" alt="edit-icon" />
+            <img src={share} alt="edit-icon" />
           </div>
         </div>
 
@@ -100,14 +107,14 @@ const EditPlant = (props) => {
                   className="button-radio active"
                   value={true}
                   name="outdoor">
-                  <img src="../images/deer-white.svg" alt="deer" />Outdoor</button>
+                  <img src={deerWhite} alt="deer" />Outdoor</button>
                 <button
                   id="button-radio-grow"
                   className="button-radio "
                   onClick={handleRadioButton}
                   value={false}
                   name="outdoor">
-                  <img src="../images/fireplace-green.svg" alt="fireplace" />
+                  <img src={fireplaceGreen} alt="fireplace" />
               Indoor</button>
               </div>
               :
@@ -118,13 +125,13 @@ const EditPlant = (props) => {
                   onClick={handleRadioButton}
                   value={true}
                   name="outdoor">
-                  <img src="../images/deer-green.svg" alt="deer" />Outdoor</button>
+                  <img src={deerGreen} alt="deer" />Outdoor</button>
                 <button
                   id="button-radio-grow"
                   className="button-radio active"
                   value={false}
                   name="outdoor">
-                  <img src="../images/fireplace-white.svg" alt="fireplace" />
+                  <img src={fireplaceWhite} alt="fireplace" />
               Indoor</button>
               </div>
             }
@@ -176,64 +183,3 @@ const EditPlant = (props) => {
 
 export default EditPlant
 
-
-
-{/* <form id="editPlant" onSubmit = { handleSubmit} > 
-    <div>
-      <div>
-        <div>
-          <label>Image</label>
-          <input 
-            type = "text"
-            onChange= { handleChange}
-            value = {plantData.image}
-            name = "image"
-          />
-        </div>
-        <h2>{plantData.scientificName}</h2>
-        <h3> {plantData.commonName}</h3>
- 
-        <textarea
-          placeholder="Care notes for your plant..."
-          onChange={handleChange}
-          value={plantData.careNotes}
-          name="careNotes"
-        ></textarea>
-        <br />
-        <button
-          onClick={handleChange}
-          value={true}
-          name="outdoor"
-        >outdoor</button>
-        <button
-          onClick={handleChange}
-          value={false}
-          name="outdoor">
-          Indoor</button>
-
-        <select
-          onChange={handleChange}
-          name="plantType">
-          <option>Plant Type...</option>
-          <option>Bulb</option>
-          <option>Cactus/Succulent</option>
-          <option>Climber</option>
-          <option>Conifer</option>
-          <option>Fern</option>
-          <option>Fruit</option>
-          <option>Herb</option>
-          <option>Ornamental</option>
-          <option>Grass</option>
-          <option>Perennial</option>
-          <option>Rose</option>
-          <option>Shrub</option>
-          <option>Tree</option>
-          <option>Palm</option>
-          <option>Bamboo</option>
-        </select>
-        <button onClick={handleSubmit}>Edit my plant</button>
-      </div>
-    </div>
-  
-
-  </form> */}

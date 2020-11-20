@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-// import { Link } from 'react-router-dom'
+
+import messageIcon from '../images/book.svg'
+import edit from '../images/share.svg'
+import deerWhite from '../images/deer-white.svg'
+import fireplaceGreen from '../images/fireplace-green.svg'
+import fireplaceWhite from '../images/fireplace-white.svg'
+import deerGreen from '../images/deer-green.svg'
 
 // * Common name
 // * Scientific name 
@@ -93,11 +99,11 @@ const AddPlant = (props) => {
           {/* Making left section and right edit icon align center */}
           <div className="header-icon">
             {/* Making 'Messages' and the icon align center */}
-            <img src="../images/book.svg" alt="message-icon" />
+            <img src={messageIcon} alt="message-icon" />
             <h6>{plantData.bibliography}</h6>
           </div>
           <div>
-            <img src="../images/share.svg" alt="edit-icon" />
+            <img src={edit} alt="edit-icon" />
           </div>
         </div>
 
@@ -118,14 +124,14 @@ const AddPlant = (props) => {
                   className="button-radio active"
                   value={true}
                   name="outdoor">
-                  <img src="../images/deer-white.svg" alt="deer" />Outdoor</button>
+                  <img src={deerWhite} alt="deer" />Outdoor</button>
                 <button
                   id="button-radio-grow"
                   className="button-radio "
                   onClick={handleRadioButton}
                   value={false}
                   name="outdoor">
-                  <img src="../images/fireplace-green.svg" alt="fireplace" />
+                  <img src={fireplaceGreen} alt="fireplace" />
               Indoor</button>
               </div>
               :
@@ -136,13 +142,13 @@ const AddPlant = (props) => {
                   onClick={handleRadioButton}
                   value={true}
                   name="outdoor">
-                  <img src="../images/deer-green.svg" alt="deer" />Outdoor</button>
+                  <img src={deerGreen} alt="deer" />Outdoor</button>
                 <button
                   id="button-radio-grow"
                   className="button-radio active"
                   value={false}
                   name="outdoor">
-                  <img src="../images/fireplace-white.svg" alt="fireplace" />
+                  <img src={fireplaceWhite} alt="fireplace" />
               Indoor</button>
               </div>
             }
