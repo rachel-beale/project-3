@@ -45,7 +45,7 @@ const UserMap = () => {
       })
   }, [])
 
-  console.log(longLat)
+  // console.log(longLat)
 
 
   const [viewPort, setViewPort] = useState({
@@ -102,7 +102,7 @@ const UserMap = () => {
               </Marker>
             })}
 
-            {console.log(popupInfo)}
+            {/* {console.log(popupInfo)} */}
 
             {popupInfo ? (
               <Popup

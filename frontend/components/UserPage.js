@@ -52,7 +52,8 @@ const UserPage = (props) => {
     axios.get(`/api/users-social/${profileId}`)
       .then(resp => {
         updatePosts(resp.data)
-        console.log(resp.data)
+
+        
       })
   }, [])
 
@@ -181,16 +182,11 @@ const UserPage = (props) => {
                   + timestamp.getHours() + ':'
                   + timestamp.getMinutes()
                 return <div
-                  key={post._id}
-                // className='social-item'
-                >
-
+                  key={index}>
                   <div className="nav-item">
                     <img src={navProfile} alt="nav-profile" />
                     <h4>{user.name} </h4>
-
-                    {console.log(post._id)}
-
+                    {/* {console.log(post._id)} */}
                   </div>
                   <div className="socialStatus">
                     <div className='list-item' id="fernPhoto"

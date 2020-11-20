@@ -30,7 +30,7 @@ const Fernstagram = () => {
     })
       .then(resp => {
         const data = resp.data
-        console.log(data)
+        // console.log(data)
         updateFeedData(data)
       })
   }, [])
@@ -46,7 +46,7 @@ const Fernstagram = () => {
         if (result.event !== 'success') {
           return
         }
-        console.log(result.info.url)
+        // console.log(result.info.url)
         updatePostData({
           ...postData,
           image: result.info.url
@@ -82,7 +82,7 @@ const Fernstagram = () => {
         })
           .then(resp => {
             const data = resp.data
-            console.log(data)
+            // console.log(data)
             updateFeedData(data)
           })
       })
@@ -96,7 +96,7 @@ const Fernstagram = () => {
 
   function handleComment(socialId) {
     if (text === '') return
-    console.log(socialId)
+    // console.log(socialId)
     axios.post(`/api/social/${socialId}/comment`, { directComment: text }, {
       headers: { Authorization: `Bearer ${token}` }
     })
@@ -105,7 +105,7 @@ const Fernstagram = () => {
           headers: { Authorization: `Bearer ${token}` }
         })
           .then(resp => {
-            console.log(resp)
+            // console.log(resp)
             const data = resp.data
             setText('')
             updateFeedData(data)
@@ -114,7 +114,7 @@ const Fernstagram = () => {
   }
 
   function handleInput(e) {
-    console.log(e.target.value)
+    // console.log(e.target.value)
     setText(e.target.value)
   }
 
@@ -211,7 +211,7 @@ const Fernstagram = () => {
                   >Post</button>
                 </div>
                 {post.directComments.map(comment => {
-                  { console.log(comment.user.name) }
+                  // { console.log(comment.user.name) }
                   return <div key={comment._id}>
                     <h5>{comment.user.name}</h5>
                     <p>{comment.directComment}</p>
