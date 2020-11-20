@@ -132,7 +132,7 @@ mongoose.connect(
             image: 'https://i.imgur.com/mTcuM2e.jpg',
             caption: 'Best birthday present!',
             user: users[5]
-          },
+          }
         ]), users
       })
 
