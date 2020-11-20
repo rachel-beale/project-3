@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>book</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.588235 0 0 0 0 0.403922 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <path d="M15.2000001,1.60000006 C15.7134629,1.60000006 16.0000006,1.89847691 16.0000006,2.4000001 L16.0000001,14.4000001 L6.40000025,14.4000006 C5.99215919,14.4000006 5.65559864,14.7051887 5.60623336,15.0996503 L5.60000022,15.2000006 C5.60000022,15.6418284 5.95817244,16.0000006 6.40000025,16.0000006 L6.40000025,16.0000006 L16.0000001,16.0000001 L16.0000006,16.8000007 C16.0000006,17.3015239 15.7134629,17.6000001 15.2000001,17.6000001 L5.60000022,17.6000001 C4.20288233,17.6000001 3.20000013,16.5553317 3.20000013,15.2000006 L3.20000013,4.00000016 C3.20000013,2.64466902 4.20288233,1.60000006 5.60000022,1.60000006 L15.2000001,1.60000006 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="book" transform="translate(-30.000000, -285.000000)" filter="url(#filter-1)">
+            <g transform="translate(30.000000, 285.000000)">
+                <rect id="bound" x="0" y="0" width="19.2000008" height="19.2000008"></rect>
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" opacity="0.596516927" xlink:href="#path-2"></use>
+                <rect id="Rectangle" fill="#FFFFFF" mask="url(#mask-3)" x="5.60000022" y="4.00000016" width="8.00000032" height="1.60000006" rx="0.800000032"></rect>
+                <rect id="Rectangle-Copy" fill="#FFFFFF" mask="url(#mask-3)" x="5.60000022" y="7.20000029" width="5.60000022" height="1.60000006" rx="0.800000032"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -207,7 +207,7 @@ nav {
 
 // ? HOME
 .cover {
-  background: linear-gradient($overlay, $overlay), url("/images/BG-1.jpg");
+  background: linear-gradient($overlay, $overlay), url("../images/BG-1.jpg");
   background-size: cover;
   height: 200px;
   width: 100%;
@@ -335,31 +335,31 @@ hr {
 }
 
 #home-profile {
-  background: linear-gradient($overlay, $overlay), url("/images/BG-2.jpg");
+  background: linear-gradient($overlay, $overlay), url("../images/BG-2.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #home-search {
-  background: linear-gradient($overlay, $overlay), url("/images/BG-3.jpg");
+  background: linear-gradient($overlay, $overlay), url("../images/BG-3.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #home-map {
-  background: linear-gradient($overlay, $overlay), url("/images/BG-4.jpg");
+  background: linear-gradient($overlay, $overlay), url("../images/BG-4.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #home-ferngram {
-  background: linear-gradient($overlay, $overlay), url("/images/BG-5.jpg");
+  background: linear-gradient($overlay, $overlay), url("../images/BG-5.jpg");
   background-size: cover;
   background-position: bottom;
 }
 
 #home-pinboard {
-  background: linear-gradient($overlay, $overlay), url("/images/BG-6.jpg");
+  background: linear-gradient($overlay, $overlay), url("../images/BG-6.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -404,7 +404,7 @@ select {
 
 // ? Plant search
 .search-cover {
-  background: linear-gradient($overlay, $overlay), url("/images/BG-1.jpg");
+  background: linear-gradient($overlay, $overlay), url("../images/BG-1.jpg");
   background-size: cover;
   height: 370px;
   width: 100%;

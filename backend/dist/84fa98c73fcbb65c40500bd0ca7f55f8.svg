@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>profile</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="profile" transform="translate(-60.000000, -450.000000)" filter="url(#filter-1)">
+            <g transform="translate(60.000000, 450.000000)">
+                <polygon id="Shape" points="0 0 32 0 32 32 0 32"></polygon>
+                <path d="M16,14.6666667 C13.0544813,14.6666667 10.6666667,12.278852 10.6666667,9.33333333 C10.6666667,6.38781467 13.0544813,4 16,4 C18.9455187,4 21.3333333,6.38781467 21.3333333,9.33333333 C21.3333333,12.278852 18.9455187,14.6666667 16,14.6666667 Z" id="Mask" fill="#000000" fill-rule="nonzero" opacity="0.6"></path>
+                <path d="M4.00086891,26.932274 C4.51767803,20.5686878 9.6825498,17.3333333 15.9777884,17.3333333 C22.3616218,17.3333333 27.6065116,20.3909238 27.9972191,26.9333333 C28.0127839,27.1939654 27.9972191,28 26.9955999,28 C22.0548319,28 14.7129663,28 4.97000297,28 C4.63561621,28 3.97271767,27.2789066 4.00086891,26.932274 Z" id="Mask-Copy" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>camera-green</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.588235 0 0 0 0 0.403922 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="camera-green" transform="translate(-78.000000, -215.000000)" filter="url(#filter-1)">
+            <g transform="translate(78.000000, 215.000000)">
+                <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                <path d="M19,7 C20.1045695,7 21,7.8954305 21,9 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,9 C3,7.8954305 3.8954305,7 5,7 L19,7 Z M12,9 C9.790861,9 8,10.790861 8,13 C8,15.209139 9.790861,17 12,17 C14.209139,17 16,15.209139 16,13 C16,10.790861 14.209139,9 12,9 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <rect id="Rectangle" fill="#FFFFFF" opacity="0.6" x="9" y="4" width="6" height="2" rx="1"></rect>
+                <circle id="Oval-2" fill="#FFFFFF" opacity="0.6" cx="12" cy="13" r="2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>round-flower-green</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.588235 0 0 0 0 0.403922 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="round-flower-green" transform="translate(-78.000000, -242.000000)" filter="url(#filter-1)">
+            <g transform="translate(78.000000, 242.000000)">
+                <polygon id="bound" points="0 0 24 0 24 24 0 24"></polygon>
+                <circle id="Oval-32" fill="#FFFFFF" cx="15" cy="17" r="5"></circle>
+                <circle id="Oval-32-Copy" fill="#FFFFFF" cx="9" cy="17" r="5"></circle>
+                <circle id="Oval-32-Copy-2" fill="#FFFFFF" cx="7" cy="11" r="5"></circle>
+                <circle id="Oval-32-Copy-3" fill="#FFFFFF" cx="17" cy="11" r="5"></circle>
+                <circle id="Oval-32-Copy-4" fill="#FFFFFF" cx="12" cy="7" r="5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
