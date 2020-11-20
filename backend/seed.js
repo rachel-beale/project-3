@@ -3,9 +3,10 @@ const Data = require('./models/data')
 const User = require('./models/user')
 const Message = require('./models/message')
 const Social = require('./models/social')
+const { dbURI } = require('./config/environment')
 
 mongoose.connect(
-  'mongodb://localhost/seeded',
+  dbURI,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
   (err) => {
     if (err) return console.log(err)

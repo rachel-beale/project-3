@@ -1,3 +1,6 @@
+
+const path = require('path')
+const dist = path.join(__dirname, 'dist')
 const express = require('express')
 const expressServer = express()
 const { port } = require('./config/environment')
@@ -5,12 +8,12 @@ require('dotenv').config()
 const bodyParser = require('body-parser')
 const Router = require('./router')
 const mongoose = require('mongoose')
-
+const { dbURI } = require('./config/environment')
 
 mongoose.connect(
 
   //! Complete DB location 
-  'mongodb://localhost/seeded',
+  dbURI,
 
   // This will remove warnings that we don't need. We don't really need
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
@@ -38,6 +41,13 @@ expressServer.use(bodyParser.json())
 
 // Adding /api as a common route, so that all requests start with /api
 expressServer.use('/api', Router)
+
+// For deployment
+expressServer.use('/', express.static(dist))
+
+expressServer.get('*', function (req, res) {
+  res.sendFile(path.join(dist, 'index.html'))
+})
 
 // We can give it whichever port we like, but it must be unique!
 expressServer.listen(port)
