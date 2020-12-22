@@ -8,17 +8,13 @@ import deerWhite from '../images/deer-white.svg'
 import fireplaceWhite from '../images/fireplace-white.svg'
 import fireplaceGreen from '../images/fireplace-green.svg'
 
-// * Image 
-// * Outdoor plant 
-// * Plant type
-// * User notes
-// * Confirmation button takes you back to personal plant page
-
 const EditPlant = (props) => {
   const plantId = props.match.params.plantId
   const [radioButton, updateRadioButton] = useState()
   const [plantData, updatePlantData] = useState({})
 
+
+  // * Props used for the plant ID, then GETting plant information to render based on the ID provided. 
   useEffect(() => {
     axios.get(`/api/plants/${plantId}`)
       .then(resp => {
@@ -27,6 +23,7 @@ const EditPlant = (props) => {
       })
   }, [])
 
+  // * formData used for the PUT  request. Only information that we want to change. Other details to remain the same. 
   const [formData, updateFormData] = useState({
     careNotes: '',
     outdoor: false,
@@ -45,6 +42,7 @@ const EditPlant = (props) => {
     updateFormData(data)
   }
 
+  // * PUTting data to our API.
   function handleSubmit(event) {
     event.preventDefault()
     const token = localStorage.getItem('token')

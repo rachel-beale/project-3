@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
-// * Standard Login Form (Pre populate?)
-// * Once logged in -> Link to Home
 
 const Login = (props) => {
 

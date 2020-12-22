@@ -3,12 +3,6 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 
-// * Title
-// * Search Bar
-// * List of Plants
-
-// ? Plant Cards
-// * Link to add to profile
 
 const PlantSearch = () => {
   const [results, updateResults] = useState([])

@@ -2,14 +2,6 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import navProfile from '../images/nav-profile.svg'
 
-// ! This is the social feed
-// * List of all posts in time order 
-// * Image with caption 
-// * Button to like
-// * Button to comment
-// * If you click on their profile image it will take you to their profile
-
-
 const Fernstagram = () => {
 
   const [feedData, updateFeedData] = useState([])
@@ -17,13 +9,14 @@ const Fernstagram = () => {
   const token = localStorage.getItem('token')
   const [button, updateButton] = useState()
 
+  // * postData for the image upload via. Cloudinary. 
   const [postData, updatePostData] = useState({
     caption: '',
     image: ''
   })
   const [inputValue, updateInputValue] = useState('')
 
-
+  // * GET request to get social feed information from API. 
   useEffect(() => {
     axios.get('/api/social', {
       headers: { Authorization: `Bearer ${token}` }
@@ -35,7 +28,7 @@ const Fernstagram = () => {
       })
   }, [])
 
-
+  // * Function for using cloudinary uploading service
   function handleUpload() {
     window.cloudinary.createUploadWidget(
       {
@@ -63,6 +56,7 @@ const Fernstagram = () => {
     })
   }
 
+  // * POSTing information for new ferngram image post.
   function handleSubmit() {
     if (postData.image === '' || postData.caption === '') return
     axios.post('/api/social', postData, {
@@ -94,6 +88,7 @@ const Fernstagram = () => {
     updateButton(!button)
   }
 
+  // * Function to post a new comment on a post. 
   function handleComment(socialId) {
     if (text === '') return
     // console.log(socialId)

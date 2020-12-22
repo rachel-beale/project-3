@@ -14,6 +14,7 @@ const UserMap = () => {
   const [longLat, updateLongLat] = useState([])
   const [popupInfo, updatePopupInfo] = useState(null)
 
+  // * GETing user information. Another get request that converts postcodes to longitude and latitude 
   useEffect(() => {
     axios.get('/api/user/users')
       .then(resp => {
@@ -45,9 +46,7 @@ const UserMap = () => {
       })
   }, [])
 
-  // console.log(longLat)
-
-
+  // * Set up for mapbox
   const [viewPort, setViewPort] = useState({
     height: '80vh',
     width: '100%',
@@ -97,13 +96,8 @@ const UserMap = () => {
                     </button>
                 }
 
-
-
               </Marker>
             })}
-
-            {/* {console.log(popupInfo)} */}
-
             {popupInfo ? (
               <Popup
                 latitude={popupInfo.lat}

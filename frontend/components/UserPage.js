@@ -14,20 +14,6 @@ import flowerWhite from '../images/round-flower-white.svg'
 import cameraGreen from '../images/camera-green.svg'
 import flowerGreen from '../images/round-flower-green.svg'
 import cameraWhite from '../images/camera-white.svg'
-// ! User Page
-// * Name 
-// * Image
-// * Badges 
-// * Status 
-// * Plant count 
-// * User bio 
-// * Contact button 
-// * List of the users plants 
-
-// ? Ability to see users plants and posts
-// ? Link to add more plants
-// ? Link to see messages
-
 
 const UserPage = (props) => {
   const [user, updateUser] = useState({})
@@ -53,7 +39,7 @@ const UserPage = (props) => {
       .then(resp => {
         updatePosts(resp.data)
 
-        
+
       })
   }, [])
 
@@ -130,14 +116,14 @@ const UserPage = (props) => {
                   className="button-radio active">
                   <img src={flowerWhite} alt="flower"></img>
                   Plants
-                  </button>
+                </button>
                 <button
                   id="button-radio-grow"
                   className="button-radio"
                   onClick={handleRadioButton}>
                   <img src={cameraGreen} alt="camera"></img>
                   Posts
-                  </button>
+                </button>
               </div>
               {isCreator(user._id) && <Link to={'/plant-search'}>
                 <div className="button-green button-addPlant">Add New plant</div>

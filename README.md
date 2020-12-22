@@ -11,7 +11,7 @@ By [Rachel ] (https://github.com/rachel-beale) and co-contribututors - [Enrico ]
 As our third project for General Assembly we were tasked as a group to of 4 to work together and develop a Full Stack application using MERN - MongoDB, Express, React and Node over the course of 7 days. 
 
 Seeded is a community plant-sitting app.
- The app allow users to sign up and communicate with each other to look after their plants while they were away. The concept of our app is feature rich, and allowed us to create our own database, pull from external APIs, create responsive user maps, a social media pages with image uplaoding and message boards. 
+ The app allow users to sign up and communicate with each other to help find someone to look after their plants while they were away. The concept of our app is feature rich, and allowed us to create our own database, pull from external APIs, create responsive user maps, a social media pages with image uploading and message boards. 
 
 Find our completed app here -> [ SEEDED ] (https://rachelbeale-seeded.herokuapp.com)
 If you would like to test the app, you can create your account or please feel free to use the following credentials for a demo account: 
@@ -40,10 +40,9 @@ Password: CarlLinnaeus1?
 
 ## Approach Taken 
 ### Planning
-We spent the first day planning the foundations of our app. This included an overview of what pages we wanted in the app, details of the schema's and controllers we would need, as well as a usermap that detailed exactly what would be included on each page. 
+We spent the first day throughly planning the foundations of our app. This included an overview of what we pages we wanted in the app, details of the schema's and controller's we would need for the backend  and well as throughly planning our user map. 
 
 <img src = ./README-files/seeded-plan.png >
-
 
 <img src = ./README-files/seeded-usermap.png >
 

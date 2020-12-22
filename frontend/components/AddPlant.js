@@ -8,21 +8,8 @@ import fireplaceGreen from '../images/fireplace-green.svg'
 import fireplaceWhite from '../images/fireplace-white.svg'
 import deerGreen from '../images/deer-green.svg'
 
-// * Common name
-// * Scientific name 
-// * Image 
-// * Dui Decimal
-// * Synonyms 
-// * Add button 
-// * Share button 
-// * Wish button
-// ? Add User Details
-
-// ? Form to add User details before POSTING to list
-
-// ! STILL TO ADD - WISH LIST ICON
-
 const AddPlant = (props) => {
+  // * Using props to pull through plant information from the plan search page. 
   const plantData = props.location.state.plant
   const [radioButton, updateRadioButton] = useState()
   const [reducedSynonyms, updateReducedSynonyms] = useState('')
@@ -43,7 +30,7 @@ const AddPlant = (props) => {
     }))
   }, [])
 
-  
+  // * Function to complete the form data needed for the PUT request.
   const [formData, updateFormData] = useState({
     image: `${plantData.image_url}`,
     commonName: `${plantData.common_name}`,
@@ -55,7 +42,7 @@ const AddPlant = (props) => {
     plantType: ''
   })
 
-
+// * Function - handle Change
   function handleChange(event) {
     const data = {
       ...formData,
@@ -64,7 +51,7 @@ const AddPlant = (props) => {
     updateFormData(data)
   }
 
-  // Function to POST data to our API 
+  // * Function to POST data to our API, using the formData 
   function handleSubmit(event) {
     event.preventDefault()
     const token = localStorage.getItem('token')
@@ -78,6 +65,7 @@ const AddPlant = (props) => {
       })
   }
 
+  // * Radio button > true or false for outdoor plant. 
   function handleRadioButton(event) {
     event.preventDefault()
     updateRadioButton(!radioButton)

@@ -12,19 +12,6 @@ import navSetting from '../images/nav-settings.svg'
 import navWhite from '../images/NAV-WHITE.svg'
 import logo from '../images/logo.svg'
 
-// ! Burger for mobile
-// ! Navbar for desktop 
-// * Home 
-// * Map
-// * Plant Search 
-// * Message Board
-// * Full Social Page
-// * Messages 
-// * Profile 
-// * Settings 
-// * Logout
-
-
 const Header = () => {
 
   const [user, updateUser] = useState([])
