@@ -14,7 +14,7 @@ After some deliberation, we settled on creating **Seeded - a community plant-sit
 
 The app allows users to sign up and communicate with each other to help find other plant parents who can look after their plants while they were away. The concept of our app is feature rich, and allowed us to create our own database, pull from external APIs, create responsive user maps, allow users to search & add plants that they owned to their 'collection', as well as having a social media page with image uploading and message boards. 
 
-Find our completed app here -> [ SEEDED ] (https://rachelbeale-seeded.herokuapp.com)
+Find our completed app here -> [ SEEDED ](https://rachelbeale-seeded.herokuapp.com)
 If you would like to test the app, you can create your account or please feel free to use the following credentials for a demo account: 
 
 Username: CarlLinnaeus
