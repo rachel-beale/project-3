@@ -80,7 +80,6 @@ const Fernstagram = () => {
             updateFeedData(data)
           })
       })
-
   }
 
   function handleButton(event) {

@@ -35,14 +35,13 @@ function getPlantsByUser(req, res) {
   Data
     .find({ user: userId })
     .then(resp => res.send(resp))
-}  
+}
 
 // ? EDIT OUR PLANT
 function editPlants(req, res) {
   const name = req.params.id
   const currentUser = req.currentUser
   const body = req.body
-
   Data
     .findById(name)
     .then(plant => {
@@ -90,6 +89,6 @@ module.exports = {
   editPlants,
   deletePlants,
   getPlants,
-  getPlantsByUser, 
+  getPlantsByUser,
   singlePlant
 }

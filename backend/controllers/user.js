@@ -27,15 +27,12 @@ function loginUser(req, res) {
       if (!user.validatePassword(req.body.password)) {
         return res.status(401).send({ message: 'Invalid Password' })
       }
-
       const token = jwt.sign(
         { sub: user._id },
         secret,
         { expiresIn: '50hr' }
       )
-
       res.status(202).send({ token, message: 'Login was successful' })
-
     })
     .catch(err => res.send(err))
 }
