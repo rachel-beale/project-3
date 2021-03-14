@@ -5,7 +5,21 @@
 
 MERN Full Stack Application. 
 
-By [Rachel] (https://github.com/rachel-beale),  [Enrico] (https://github.com/bacxhus), [Laurence] (https://github.com/ProDigresser) and [Rebecca] (https://github.com/rebeccaacioadea) 
+By
+
+[Rachel]: https://github.com/rachel-beale
+
+,
+
+[Enrico]: https://github.com/bacxhus
+
+,
+
+[Laurence]: https://github.com/ProDigresser
+
+and
+
+[Rebecca]: https://github.com/rebeccaacioadea
 
 ## Overview 
 As our third project for General Assembly we were tasked in groups of 4 to create and develop a Full Stack MERN (MongoDB, Express, React and Node) application over the course of 7 days. 
